@@ -16,6 +16,9 @@
  <div class="container">
  <form action="functions/registrar-usuario.php" method="post">
  <center>  <h1>REGISTRARSE</h1></center>
+ <hr>
+ 
+
 <!-- Nombre del usuario-->
 <br><label>Nombre:</label><br>
 <div class="input-group">
@@ -75,16 +78,10 @@
  <input type="text" name="keyword" placeholder="Palabra clave" class="form-control">
 </div>
 
-<!--privilegios-->
-<label>Privilegio:</label><br>
-<div class="input-group">
- <select class="form-control" name="rol">
-   <option value="">Selecciona un privilegio</option>
-   <option value="administrador">Administrador</option>
-   <option value="usuario">Usuario</option>
- </select>
-</div>
+
 <button type="submit" name="submit" class="btn btn-flat-purple">REGISTRAR</button>
+
+<hr>
 </form>
 </div>
 

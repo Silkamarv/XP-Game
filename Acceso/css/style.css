@@ -38,7 +38,7 @@ form {
 .input-group .icons {
   width: 35px;
   height: 35px;
-  background-color: #9400d3;
+  background-color: #4285f4;
   color: #fff;
   display: flex;
   justify-content: center;
@@ -60,7 +60,7 @@ form {
 }
 
 .error {
-  color: #9400d3;
+  color: #4285f4;
 }
 
 .btn {
@@ -71,7 +71,7 @@ form {
 .btn-flat-green {
   border: transparent;
   height: 35px;
-  background-color: #00e676;
+  background-color: #34a853;
   color: #fff;
   font-family: sans-serif;
   margin-bottom: 10px;
@@ -82,7 +82,7 @@ form {
 .btn-flat-purple {
   border: transparent;
   height: 35px;
-  background-color: #9400d3;
+  background-color: #4285f4;
   color: #fff;
   font-family: sans-serif;
   margin-bottom: 10px;
@@ -94,7 +94,7 @@ form {
   text-align: center;
   margin: auto;
   display: block;
-  color: #9400d3;
+  color: #4285f4;
 }
 
 .titulo{
@@ -103,3 +103,24 @@ form {
   color: #000000;
   font-size: 50px;
 }
+
+.btn-flat-blue {
+  border: transparent;
+  height: 40px;
+  width: 550px;
+  background-color: #4285f4;
+  color: #fff;
+  font-family: sans-serif;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-style: bold;
+  outline: 0;
+}
+.tituloMenu h1{
+  font-family: 'Bungee Shade', cursive;
+  text-shadow: 2px 2px 8px #fdfdfd;
+  color: #000000;
+  font-size: 100px;
+  font-style: bold;
+}
+

@@ -1,14 +1,14 @@
 -- tabla usuario--
-CREATE TABLE `usuario` (
+CREATE TABLE `usuarios` (
 	`id` INT(11) NOT NULL AUTO_INCREMENT,
 	`nombre` VARCHAR(255) NOT NULL,
 	`apellido` VARCHAR(255) NOT NULL,
+	`cedula` VARCHAR(255) NOT NULL,
 	`fnacimiento` DATE NOT NULL,
 	`carrera` VARCHAR(255) NOT NULL,
 	`username` VARCHAR(255) NOT NULL,
 	`password` VARCHAR(255) NOT NULL,
 	`keyword` VARCHAR(255) NOT NULL,
-	`privilegio` INT(2) NOT NULL,
 	PRIMARY KEY (`id`),
 	UNIQUE INDEX `id` (`id`),
 	UNIQUE INDEX `username` (`username`)
