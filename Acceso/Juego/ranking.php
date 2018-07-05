@@ -1,5 +1,6 @@
 <?php
 session_start();
+header('location:../login.php');
 
 ?>
 <!DOCTYPE html>
@@ -23,34 +24,49 @@ session_start();
 
   <body class="bg-image">
    <div class="container">
-   <br><br><br><br>
+   <br><br>
 <hr>
 <div class="tituloMenu">
-<center>  <h1>XP TRAINING</h1>
-</center>
+<center>  <h1>XP TRAINING</h1></center>
 </div>
 <hr>
-<br><br> 
+
+<center><h1>RANKING DE JUGADORES</h1></center>
  <center> 
- <h1>TUTORÍA</h1>
 
-<a href="../Documentos/nivel1.pdf">
-<input type="button" class="btn btn-flat-blue" value="NIVEL 1" /><br>
-</a>
+<br>
+<table>
+  <tr>
+    <th>POSICIÓN</th>
+    <th>NOMBRE</th>
+    <th>PUNTAJE</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Griffin</td>
+    <td>100</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Griffin</td>
+    <td>150</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Swanson</td>
+    <td>300</td>
+  </tr>
 
-<a href="../Documentos/nivel2.pdf">
-<input type="button" class="btn btn-flat-blue" value="NIVEL 2"/><br>
-</a>
+</table>
+  <br> <br>
+  <input type="button" class="btn btn-flat-blue" value="VOLVER AL MENÚ PRINCIPAL" onClick="location.href='../Juego/menu.php'"/><br>
 
-<a href="../Documentos/nivel3.pdf">
-<input type="button" class="btn btn-flat-blue" value="NIVEL 3" /><br>
-</a>
 
- <input type="button" class="btn btn-flat-blue" value="VOLVER AL MENÚ PRINCIPAL" onClick="location.href='../Juego/menu.php'"/><br>
 </center>
 
 
 </div>
+
 <footer>
     <center>
     <h5>&copy 2018 Universidad Tecnológica de Panamá | Diseñado y desarrollado por: S. Vargas, N. Cano, I. Dominguez, E. Rodriguez, J. Miranda</h6>

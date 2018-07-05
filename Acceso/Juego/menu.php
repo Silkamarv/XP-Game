@@ -1,3 +1,9 @@
+<?php
+session_start();
+header('location:../login.php');
+
+?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -6,6 +12,7 @@
     <link rel="stylesheet" href="font/font-awesome.min.css">
  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
  <link rel="stylesheet" href="../css/style.css">
+ <link rel="stylesheet" href="tabla.css">
  <link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
    <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -29,23 +36,22 @@
  
 
  <input type="button" class="btn btn-flat-blue" value="TUTORÍA" onClick="location.href='../Juego/tutorial.php'"/><br>
- <input type="button" class="btn btn-flat-blue" value="JUGAR" onClick="location.href='../Juego/tutorial.php'"/><br>
- <input type="button" class="btn btn-flat-blue" value="RANKING" onClick="location.href='../Juego/tutorial.php'"/><br>
- <input type="button" class="btn btn-flat-blue" value="PERFIL DE USUARIO" onClick="location.href='../Juego/tutorial.php'"/><br>
- <input type="button" class="btn btn-flat-blue" value="REGLAS DEL JUEGO" onClick="location.href='../Juego/tutorial.php'"/><br>
- <input type="button" class="btn btn-flat-blue" value="CRÉDITOS" onClick="location.href='../Juego/tutorial.php'"/><br>
+ <input type="button" class="btn btn-flat-blue" value="JUGAR" onClick="location.href='../Juego/jugar.php'"/><br>
+ <input type="button" class="btn btn-flat-blue" value="RANKING" onClick="location.href='../Juego/ranking.php'"/><br>
+ <input type="button" class="btn btn-flat-blue" value="PERFIL DE USUARIO" onClick="location.href='../Juego/perfil.php'"/><br>
+ <input type="button" class="btn btn-flat-blue" value="REGLAS DEL JUEGO" onClick="location.href='../Juego/reglas.php'"/><br>
+ <input type="button" class="btn btn-flat-blue" value="CRÉDITOS" onClick="location.href='../Juego/creditos.php'"/><br>
  <input type="button" class="btn btn-flat-blue" value="CERRAR SESIÓN" onClick="location.href='../functions/logout.php'"/><br>
 
- <!--
- <button class="btn btn-flat-blue"></button> >TUTORIAL</button><br>
- <button class="btn btn-flat-blue">JUGAR</button><br>
- <button class="btn btn-flat-blue">RANKING</button><br>
- <button class="btn btn-flat-blue">REGLAS DEL JUEGO</button><br>
- <button class="btn btn-flat-blue">CRÉDITOS</button><br>
- <button class="btn btn-flat-blue">CERRAR SESIÓN</button><br>  -->
 </center>
 
 
 </div>
+
+<footer>
+    <center>
+    <h5>&copy 2018 Universidad Tecnológica de Panamá | Diseñado y desarrollado por: S. Vargas, N. Cano, I. Dominguez, E. Rodriguez, J. Miranda</h6>
+    </center>
+</footer>
   </body>
 </html>

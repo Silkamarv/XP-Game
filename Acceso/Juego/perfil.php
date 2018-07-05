@@ -1,5 +1,6 @@
 <?php
 session_start();
+header('location:../login.php');
 
 ?>
 <!DOCTYPE html>
@@ -23,30 +24,48 @@ session_start();
 
   <body class="bg-image">
    <div class="container">
-   <br><br><br><br>
+   <br><br>
 <hr>
 <div class="tituloMenu">
-<center>  <h1>XP TRAINING</h1>
-</center>
+<center>  <h1>XP TRAINING</h1></center>
 </div>
 <hr>
-<br><br> 
+
+<center><h1>PERFIL DEL JUGADOR</h1></center>
  <center> 
- <h1>TUTORÍA</h1>
+ 
 
-<a href="../Documentos/nivel1.pdf">
-<input type="button" class="btn btn-flat-blue" value="NIVEL 1" /><br>
-</a>
+<div class="panel panel-info">
 
-<a href="../Documentos/nivel2.pdf">
-<input type="button" class="btn btn-flat-blue" value="NIVEL 2"/><br>
-</a>
+      <div class="panel-body">
+      <img src="../img/user.png" alt="avatar" width=128 height=128>
 
-<a href="../Documentos/nivel3.pdf">
-<input type="button" class="btn btn-flat-blue" value="NIVEL 3" /><br>
-</a>
 
- <input type="button" class="btn btn-flat-blue" value="VOLVER AL MENÚ PRINCIPAL" onClick="location.href='../Juego/menu.php'"/><br>
+
+      <h4> 
+        <?php
+        echo $_SESSION['username'];
+        ?> 
+      </h4>
+      <br>
+   
+      <h6>puntos</h6><br>
+      <h6>nivel</h6>
+
+      </div>
+    </div>
+
+
+<!--
+
+<div class="card bg-light text-dark">
+    <div class="card-body" width=200px>
+    <img src="../img/user.png" alt="avatar" width=128 height=128>
+    </div>
+  </div> --> 
+  <br>
+ <input type="button" class="btn btn-flat-blue" value="CERRAR SESIÓN" onClick="location.href='../functions/logout.php'"/><br>
+
 </center>
 
 

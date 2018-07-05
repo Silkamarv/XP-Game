@@ -1,5 +1,7 @@
+
 <?php
 session_start();
+header('location:../login.php');
 
 ?>
 <!DOCTYPE html>
@@ -26,29 +28,39 @@ session_start();
    <br><br><br><br>
 <hr>
 <div class="tituloMenu">
-<center>  <h1>XP TRAINING</h1>
-</center>
+<center>  <h1>XP TRAINING</h1></center>
 </div>
 <hr>
-<br><br> 
- <center> 
- <h1>TUTORÍA</h1>
+<br>
+<center><h1>REGLAS DEL JUEGO</h1></center>
+ 
+<br>
+<br>
 
-<a href="../Documentos/nivel1.pdf">
-<input type="button" class="btn btn-flat-blue" value="NIVEL 1" /><br>
-</a>
+<div ALIGN="justify">
 
-<a href="../Documentos/nivel2.pdf">
-<input type="button" class="btn btn-flat-blue" value="NIVEL 2"/><br>
-</a>
 
-<a href="../Documentos/nivel3.pdf">
-<input type="button" class="btn btn-flat-blue" value="NIVEL 3" /><br>
-</a>
+    <h5> 
+ <ol>
+    <li> El participante debe responder la mayor cantidad de preguntas de forma correcta.</li>
 
+    <li> Si respondes de forma correcta, tendrá un puntaje de 10 pts. por respuesta correcta.</li>
+
+    <li> Debe ser lo más rapido ya que tiene 30 segundos para responder. </li>
+
+    <li> Para responder al finalizar el 1 capitulo debe de tener un puntaje promedio para poder desbloquear nuevos capítulos.</li>
+
+    <li> Por cada capítulo se le aportará una tutoría de introducción para que se ambientalize a qué se refiere la serie de preguntas en cada capitulo.</li>
+</ol>
+</h5>
+
+</div>
+
+       
+<br><br>
+ <center>
  <input type="button" class="btn btn-flat-blue" value="VOLVER AL MENÚ PRINCIPAL" onClick="location.href='../Juego/menu.php'"/><br>
-</center>
-
+ </center>
 
 </div>
 <footer>

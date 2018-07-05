@@ -121,6 +121,34 @@ form {
   text-shadow: 2px 2px 8px #fdfdfd;
   color: #000000;
   font-size: 100px;
-  font-style: bold;
+  font-weight: bold;
 }
 
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+footer, h6 {
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  height:30px;
+  width:100%;
+  background:#0c0c0c;
+  opacity: 0.5;
+  color: #f2f2f2;
+}
