@@ -19,7 +19,7 @@
 <br><br>
   <a href="registro.php"><button type="submit" name="submit" class="btn btn-flat-purple" >REGISTRARSE</button></a>
 <a href="login.php">  <button type="submit" name="submit" class="btn btn-flat-purple">INICIAR SESION</button></a>
-<a href="#" class="login-link">OLVIDÉ CONTRASEÑA</a>
+<a href="restablecer.php" class="login-link">OLVIDÉ CONTRASEÑA</a>
 </div>
 <footer>
     <center>
