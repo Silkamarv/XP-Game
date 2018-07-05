@@ -34,7 +34,7 @@
  <input type="button" class="btn btn-flat-blue" value="PERFIL DE USUARIO" onClick="location.href='../Juego/tutorial.php'"/><br>
  <input type="button" class="btn btn-flat-blue" value="REGLAS DEL JUEGO" onClick="location.href='../Juego/tutorial.php'"/><br>
  <input type="button" class="btn btn-flat-blue" value="CRÉDITOS" onClick="location.href='../Juego/tutorial.php'"/><br>
- <input type="button" class="btn btn-flat-blue" value="CERRAR SESIÓN" onClick="location.href='../Juego/tutorial.php'"/><br>
+ <input type="button" class="btn btn-flat-blue" value="CERRAR SESIÓN" onClick="location.href='../functions/logout.php'"/><br>
 
  <!--
  <button class="btn btn-flat-blue"></button> >TUTORIAL</button><br>

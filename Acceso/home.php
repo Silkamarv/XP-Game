@@ -12,7 +12,7 @@
    <div class="container">
 <br><br>
 <hr>
-<center><a href="index.php"><img src="img/logoxp.png"></a></center>
+<center><a href="index.php"><img src="img/xplogo.png"></a></center>
 </div>
   </body>
 </html>

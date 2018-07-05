@@ -13,7 +13,7 @@
 
    <div class="container">
 
-<form action="functions/checkpass.php" method="post" >
+<form action="functions/ckeckpass.php" method="post" >
 <center>  <h1>REESTABLECER CONTRASEÑA</h1></center>
 <hr>
 <br><br>

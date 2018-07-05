@@ -40,7 +40,7 @@
 //echo '<script language="javascript">alert("HOLA");</script>';
  echo "<br/>" . "<h2>" . "Usuario Creado Exitosamente!" . "</h2>";
  echo "<h4 style='visibility:hidden' id='user'>" . "Bienvenido: " . $_POST['username'] . "</h4>" . "\n\n";
- echo "<h5>" . "Hacer Login: " . "<a href='login.php'>Login</a>" . "</h5>";
+ echo "<h5>" . "Hacer Login: " . "<a href='../login.php'>Login</a>" . "</h5>";
 
  /*?>
 <script type="text/javascript" src="alertas/sweetalert.min.js"></script>

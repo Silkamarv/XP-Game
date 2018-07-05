@@ -35,7 +35,7 @@ $result = $conexion->query($sql);
 if ($result->num_rows > 0) {
  }
  $row = $result->fetch_array(MYSQLI_ASSOC);
- if (password_verify($keyword, $row['keyword'])) {
+ if ($keyword == $row['keyword']) {
 
   $query1 = "UPDATE $tbl_name SET password = '{$hash}' WHERE keyword = '{$keyword}'"; 
 
@@ -46,15 +46,19 @@ if ($result->num_rows > 0) {
 
     $result1 = $conexion->query($query1);
 
-
-   echo "Bienvenido! " . $_SESSION['username'];
+    $_SESSION['loggedin'] = true;
+    $_SESSION['username'] = $username;
+    $_SESSION['start'] = time();
+    $_SESSION['expire'] = $_SESSION['start'] + (10* 60);
+   echo "¡Bienvenid@! " . $_SESSION['username'];
   /*  echo "<br><br><a href=../Juego/menu.php>Menu principal</a>";*/
     echo "Su contraseña ha sido restablecida exitosamente.";
+    echo "<br><a href='../login.php'>Iniciar sesión</a>";
 
  } else {
    echo "Username o Keyword estan incorrectos.";
 
-   echo "<br><a href='restablecer.php'>Volver a Intentarlo</a>";
+   echo "<br><a href='../restablecer.php'>Volver a Intentarlo</a>";
  }
  mysqli_close($conexion);
  ?>
