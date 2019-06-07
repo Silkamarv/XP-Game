@@ -38,7 +38,7 @@ form {
 .input-group .icons {
   width: 35px;
   height: 35px;
-  background-color: #9400d3;
+  background-color: #4285f4;
   color: #fff;
   display: flex;
   justify-content: center;
@@ -60,7 +60,7 @@ form {
 }
 
 .error {
-  color: #9400d3;
+  color: #4285f4;
 }
 
 .btn {
@@ -71,7 +71,7 @@ form {
 .btn-flat-green {
   border: transparent;
   height: 35px;
-  background-color: #00e676;
+  background-color: #34a853;
   color: #fff;
   font-family: sans-serif;
   margin-bottom: 10px;
@@ -82,7 +82,7 @@ form {
 .btn-flat-purple {
   border: transparent;
   height: 35px;
-  background-color: #9400d3;
+  background-color: #4285f4;
   color: #fff;
   font-family: sans-serif;
   margin-bottom: 10px;
@@ -94,7 +94,7 @@ form {
   text-align: center;
   margin: auto;
   display: block;
-  color: #9400d3;
+  color: #4285f4;
 }
 
 .titulo{
@@ -102,4 +102,53 @@ form {
   text-shadow: 2px 2px 8px #fdfdfd;
   color: #000000;
   font-size: 50px;
+}
+
+.btn-flat-blue {
+  border: transparent;
+  height: 40px;
+  width: 550px;
+  background-color: #4285f4;
+  color: #fff;
+  font-family: sans-serif;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-style: bold;
+  outline: 0;
+}
+.tituloMenu h1{
+  font-family: 'Bungee Shade', cursive;
+  text-shadow: 2px 2px 8px #fdfdfd;
+  color: #000000;
+  font-size: 100px;
+  font-weight: bold;
+}
+
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+footer, h6 {
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  height:30px;
+  width:100%;
+  background:#0c0c0c;
+  opacity: 0.5;
+  color: #f2f2f2;
 }

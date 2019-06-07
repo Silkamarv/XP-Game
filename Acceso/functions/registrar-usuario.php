@@ -5,7 +5,7 @@
  $user_db = "root";
  $pass_db = "";
  $db_name = "xp-training";
- $tbl_name = "usuario";
+ $tbl_name = "usuarios";
 
  $form_pass = $_POST['password'];
 
@@ -31,8 +31,8 @@
  }
  else{
 
- $query = "INSERT INTO usuario (nombre, apellido, cedula, fnacimiento, carrera, username, password, keyword, privilegio)
-           VALUES ('$_POST[nameuser]','$_POST[lastnameuser]','$_POST[ced]','$_POST[fecha]','$_POST[carrera]','$_POST[username]', '$hash','$_POST[keyword]','0')";
+ $query = "INSERT INTO usuarios (nombre, apellido, cedula, fnacimiento, carrera, username, password, keyword)
+           VALUES ('$_POST[nameuser]','$_POST[lastnameuser]','$_POST[ced]','$_POST[fecha]','$_POST[carrera]','$_POST[username]', '$hash','$_POST[keyword]')";
 
  if ($conexion->query($query) === TRUE) {
 
@@ -40,13 +40,13 @@
 //echo '<script language="javascript">alert("HOLA");</script>';
  echo "<br/>" . "<h2>" . "Usuario Creado Exitosamente!" . "</h2>";
  echo "<h4 style='visibility:hidden' id='user'>" . "Bienvenido: " . $_POST['username'] . "</h4>" . "\n\n";
- echo "<h5>" . "Hacer Login: " . "<a href='http://localhost:81/XPGAME/Acceso/login.php'>Login</a>" . "</h5>";
+ echo "<h5>" . "Hacer Login: " . "<a href='../login.php'>Login</a>" . "</h5>";
 
- ?>
+ /*?>
 <script type="text/javascript" src="alertas/sweetalert.min.js"></script>
 <script type="text/javascript" src="alertas/alerta.js"></script>
  <?php
-
+*/
  }
 
  else {

@@ -13,8 +13,8 @@
 
    <div class="container">
 
-<form action="functions/checklogin.php" method="post" >
-<center>  <h1>INICIAR SESION</h1></center>
+<form action="functions/ckeckpass.php" method="post" >
+<center>  <h1>REESTABLECER CONTRASEÑA</h1></center>
 <hr>
 <br><br>
   <!-- Nombre de usuario-->
@@ -24,19 +24,26 @@
    <input type="text" name="username" placeholder="Nombre de usuario" class="form-control">
   </div>
 
-  <!--contraseña-->
+  <!--palabra clave-->
 
   <div class="input-group">
    <i class="fa fa-lock icons" aria-hidden="false"></i>
-   <input type="password" name="password" placeholder="Contraseña" class="form-control">
+   <input type="text" name="keyword" placeholder="Palabra clave" class="form-control">
+  </div>
+
+    <!--Nueva Contraseña-->
+
+  <div class="input-group">
+   <i class="fa fa-lock icons" aria-hidden="false"></i>
+   <input type="password" name="newpass" placeholder="Nueva Contraseña" class="form-control">
   </div>
 
   <button type="submit" name="submit" class="btn btn-flat-purple">Ingresar</button>
   <br><br>
 <hr>
 </form>
-<a href="registro.php" class="login-link">No tienes cuenta?</a> 
-<a href="restablecer.php" class="login-link">Olvidé mi contraseña</a>
+<a href="login.php" class="login-link">Iniciar sesión</a>
+<a href="registro.php" class="login-link">No tienes cuenta?</a>
 </div>
 <footer>
     <center>

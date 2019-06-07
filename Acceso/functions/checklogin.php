@@ -3,12 +3,14 @@ session_start();
 ?>
 
 <?php
-
+/**
+ * 
+ */
 $host_db = "localhost";
 $user_db = "root";
 $pass_db = "";
 $db_name = "xp-training";
-$tbl_name = "usuario";
+$tbl_name = "usuarios";
 
 $conexion = new mysqli($host_db, $user_db, $pass_db, $db_name);
 
@@ -34,8 +36,11 @@ if ($result->num_rows > 0) {
     $_SESSION['start'] = time();
     $_SESSION['expire'] = $_SESSION['start'] + (10* 60);
 
+
+
     echo "Bienvenido! " . $_SESSION['username'];
-    echo "<br><br><a href=panel-control.php>Panel de Control</a>";
+    echo "<br><br><a href=../Juego/menu.php>Menu principal</a>";
+  
 
  } else {
    echo "Username o Password estan incorrectos.";
